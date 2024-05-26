@@ -3,14 +3,15 @@ import { Container, Text, VStack, Select, Box, Button, useToast } from "@chakra-
 import { FaBell } from "react-icons/fa";
 
 const regions = {
+  愛媛県松山市: ["2023-10-01", "2023-10-05", "2023-10-10"],
   Tokyo: ["2023-10-01", "2023-10-05", "2023-10-10"],
   Osaka: ["2023-10-02", "2023-10-06", "2023-10-11"],
   Nagoya: ["2023-10-03", "2023-10-07", "2023-10-12"],
 };
 
 const Index = () => {
-  const [selectedRegion, setSelectedRegion] = useState("Tokyo");
-  const [collectionDates, setCollectionDates] = useState(regions["Tokyo"]);
+  const [selectedRegion, setSelectedRegion] = useState("愛媛県松山市");
+  const [collectionDates, setCollectionDates] = useState(regions["愛媛県松山市"]);
   const toast = useToast();
 
   useEffect(() => {
